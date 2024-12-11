@@ -26,13 +26,14 @@ public class Bird : MonoBehaviour
             {
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upforce));
-                anim.SetTrigger ("Flap");
+                anim.SetTrigger("Flap");
             }
         }
     }
-    private void OnCollisionEnter2D()
+     void OnCollisionEnter2D()
     {
         IsDead = true;
-        anim.SetTrigger ("Die");
+        anim.SetTrigger("Die");
+        GameControl.Instance.BirdDied();
     }
 }
