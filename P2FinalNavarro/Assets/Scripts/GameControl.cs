@@ -8,7 +8,8 @@ public class GameControl : MonoBehaviour
 {
     public static GameControl Instance;
     public GameObject gameOvertext;
-    bool gameOver = false;
+    public bool gameOver = false;
+    public float scrollspeed = -1.5f;
 
     // Start is called before the first frame update
     void Awake()
@@ -30,7 +31,7 @@ public class GameControl : MonoBehaviour
     {
         if (gameOver == true && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
         }
     }
     public void BirdDied()
