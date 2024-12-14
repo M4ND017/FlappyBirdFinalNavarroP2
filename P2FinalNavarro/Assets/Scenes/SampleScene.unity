@@ -230,11 +230,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 55
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 6
-    m_MaxSize: 80
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -267,7 +267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 655.16406}
+  m_AnchoredPosition: {x: 13, y: 336.27}
   m_SizeDelta: {x: 160, y: 97.8501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &94659265
@@ -304,7 +304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 71.7}
+  m_AnchoredPosition: {x: -8, y: 30}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94659267
@@ -329,10 +329,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 55
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 5
     m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -554,7 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 690858476}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: scenery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -569,10 +569,12 @@ Transform:
   m_GameObject: {fileID: 690858475}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06913853, y: 2.4857063, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 938513471}
+  - {fileID: 2093894915}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832861172
@@ -908,13 +910,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938513468}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0576, y: -0.3007, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.44, y: -0.36, z: 0}
   m_LocalScale: {x: 1.1790658, y: 0.8750037, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2019229841}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 690858476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &938513472
 Rigidbody2D:
@@ -1092,7 +1094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOvertext: {fileID: 55927530}
   gameOver: 0
-  scrollspeed: -1.5
+  scrollSpeed: -1.5
 --- !u!1 &1840391410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1121,7 @@ Transform:
   m_GameObject: {fileID: 1840391410}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 3.32, z: 0}
+  m_LocalPosition: {x: 0.38, y: 4.091, z: 0}
   m_LocalScale: {x: 1.0127494, y: 1.1225799, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1203,7 +1205,7 @@ Transform:
   m_GameObject: {fileID: 2019229840}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 3.45, z: 0}
+  m_LocalPosition: {x: -0.17, y: 3.93, z: 0}
   m_LocalScale: {x: 1.0127494, y: 1.1225799, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1426,13 +1428,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093894910}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.99, y: -0.34, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.36, y: -0.5, z: 0}
   m_LocalScale: {x: 1.1790658, y: 0.8750037, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1840391411}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 690858476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2093894916
 MonoBehaviour:
@@ -1452,8 +1454,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 832861176}
-  - {fileID: 938513471}
-  - {fileID: 2093894915}
   - {fileID: 580018915}
   - {fileID: 15828752}
   - {fileID: 1838739773}
